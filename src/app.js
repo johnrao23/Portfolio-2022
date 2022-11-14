@@ -982,29 +982,6 @@ Ammo().then((Ammo) => {
     document.getElementById("joystick").style.visibility = "visible";
   }
 
-  const ramp = () => {
-    const wallScale = { x: 5, y: 5, z: 5 };
-
-    const wall = new THREE.Mesh(
-      new THREE.BoxBufferGeometry(wallScale.x, wallScale.y, wallScale.z),
-      new THREE.MeshStandardMaterial({
-        color: 0xf28500,
-        opacity: 0.75,
-        transparent: true,
-      })
-    );
-
-    wall.position.x = 70;
-    wall.position.y = 3;
-    wall.position.z = -35;
-
-    wall.receiveShadow = true;
-
-    scene.add(wall);
-
-    addRigidPhysics(wall, wallScale);
-  };
-
   //initialize world and begin
 
   function start() {
@@ -1013,7 +990,6 @@ Ammo().then((Ammo) => {
 
     createGridPlane();
     createBall();
-    // ramp();
 
     createWallX(87.5, 1.75, 0);
     createWallX(-87.5, 1.75, 0);
