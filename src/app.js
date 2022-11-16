@@ -65,8 +65,6 @@ import {
   launchHover,
 } from "./resources/utils";
 
-// import { rotatingLines } from "./resources/rotatingLines";
-
 export let cursorHoverObjects = [];
 
 // start Ammo Engine
@@ -992,7 +990,6 @@ Ammo().then((Ammo) => {
 
     createGridPlane();
     createBall();
-    // rotatingLines();
 
     createWallX(87.5, 1.75, 0);
     createWallX(-87.5, 1.75, 0);
