@@ -107,12 +107,12 @@ Ammo().then((Ammo) => {
   function createGridPlane() {
     // block properties
     let pos = { x: 0, y: -0.25, z: 0 };
-    let scale = { x: 175, y: 0.5, z: 175 };
+    let scale = { x: 250, y: 0.5, z: 250 };
     let quat = { x: 0, y: 0, z: 0, w: 1 };
     let mass = 0; //mass of zero = infinite mass
 
     //create grid overlay on plane
-    var grid = new THREE.GridHelper(175, 20, 0xffffff, 0xffffff);
+    var grid = new THREE.GridHelper(250, 20, 0xffffff, 0xffffff);
     grid.material.opacity = 0.5;
     grid.material.transparent = true;
     grid.position.y = 0.005;
@@ -625,7 +625,7 @@ Ammo().then((Ammo) => {
 
   //create X axis wall around entire plane
   function createWallX(x, y, z) {
-    const wallScale = { x: 0.125, y: 4, z: 175 };
+    const wallScale = { x: 0.125, y: 4, z: 250 };
 
     const wall = new THREE.Mesh(
       new THREE.BoxBufferGeometry(wallScale.x, wallScale.y, wallScale.z),
@@ -649,7 +649,7 @@ Ammo().then((Ammo) => {
 
   //create Z axis wall around entire plane
   function createWallZ(x, y, z) {
-    const wallScale = { x: 175, y: 4, z: 0.125 };
+    const wallScale = { x: 250, y: 4, z: 0.125 };
 
     const wall = new THREE.Mesh(
       new THREE.BoxBufferGeometry(wallScale.x, wallScale.y, wallScale.z),
@@ -991,10 +991,10 @@ Ammo().then((Ammo) => {
     createGridPlane();
     createBall();
 
-    createWallX(87.5, 1.75, 0);
-    createWallX(-87.5, 1.75, 0);
-    createWallZ(0, 1.75, 87.5);
-    createWallZ(0, 1.75, -87.5);
+    createWallX(125, 1.75, 0);
+    createWallX(-125, 1.75, 0);
+    createWallZ(0, 1.75, 125);
+    createWallZ(0, 1.75, -125);
 
     createBillboard(
       -80,
