@@ -107,12 +107,16 @@ Ammo().then((Ammo) => {
   function createGridPlane() {
     // block properties
     let pos = { x: 0, y: -0.25, z: 0 };
-    let scale = { x: 175, y: 0.5, z: 175 };
+    let scale = { x: 250, y: 0.5, z: 175 };
     let quat = { x: 0, y: 0, z: 0, w: 1 };
     let mass = 0; //mass of zero = infinite mass
 
+    let size = scale.x;
+    let divisionSize = 10;
+    let divisions = Math.floor(size / divisionSize);
+
     //create grid overlay on plane
-    var grid = new THREE.GridHelper(175, 20, 0xffffff, 0xffffff);
+    var grid = new THREE.GridHelper(size, divisions, 0xffffff, 0xffffff);
     grid.material.opacity = 0.5;
     grid.material.transparent = true;
     grid.position.y = 0.005;
