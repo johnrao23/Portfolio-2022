@@ -683,13 +683,13 @@ Ammo().then((Ammo) => {
     var numberOfBricksAcross = 6;
     var numberOfRowsHigh = 6;
 
-    pos.set(70, brickHeight * 0.5, -60);
+    pos.set(70, brickHeight * 0.5, -100);
     quat.set(0, 0, 0, 1);
 
     for (var j = 0; j < numberOfRowsHigh; j++) {
       var oddRow = j % 2 == 1;
 
-      pos.x = 60;
+      pos.x = 90;
 
       if (oddRow) {
         pos.x += 0.25 * brickLength;
@@ -1041,7 +1041,7 @@ Ammo().then((Ammo) => {
     createBox(
       12,
       2,
-      -70,
+      -100,
       4,
       4,
       1,
@@ -1054,7 +1054,7 @@ Ammo().then((Ammo) => {
     createBox(
       19.1,
       2,
-      -70,
+      -100,
       4,
       4,
       1,
@@ -1067,7 +1067,7 @@ Ammo().then((Ammo) => {
     createBox(
       26.9,
       2,
-      -70,
+      -100,
       4,
       4,
       1,
@@ -1093,7 +1093,7 @@ Ammo().then((Ammo) => {
     createBox(
       34.5,
       2,
-      -70,
+      -100,
       4,
       4,
       1,
@@ -1151,7 +1151,7 @@ Ammo().then((Ammo) => {
 
     simpleText(23, 0.01, -60, touchText, 1.5);
     simpleText(-50, 0.01, -5, "SKILLS", 3);
-    simpleText(-65, 0.01, -55, "EXPERIENCE & PROJECTS", 3);
+    simpleText(-60, 0.01, -55, "EXPERIENCE & PROJECTS", 3);
     simpleText(61, 0.01, -17, "TIMELINE", 3);
 
     wallOfBricks();
