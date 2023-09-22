@@ -683,7 +683,7 @@ Ammo().then((Ammo) => {
     var numberOfBricksAcross = 6;
     var numberOfRowsHigh = 6;
 
-    pos.set(70, brickHeight * 0.5, -100);
+    pos.set(70, brickHeight * 0.5, -90);
     quat.set(0, 0, 0, 1);
 
     for (var j = 0; j < numberOfRowsHigh; j++) {
@@ -1124,8 +1124,8 @@ Ammo().then((Ammo) => {
     // floatingLabel(35, 6.5, -70, "   How I \nmade this");
     // floatingLabel(44, 6.5, -70, '   How I \nmade this');
 
-    allSkillsSection(-50, 0.025, 20, 40, 40, boxTexture.allSkills);
-    allSkillsSection(61, 0.025, 13, 30, 60, inputText.activities);
+    allSkillsSection(-60, 0.025, 20, 40, 40, boxTexture.allSkills);
+    allSkillsSection(80, 0.025, 13, 30, 60, inputText.activities);
     allSkillsSection(8.75, 0.025, 62, 17, 20, boxTexture.lucasNoah);
     allSkillsSection(9, 0.01, 40, 20, 20, boxTexture.familyText);
     allSkillsSection(9, 0.01, 20, 21, 10.5, inputText.staticPortfolio);
@@ -1149,16 +1149,18 @@ Ammo().then((Ammo) => {
 
     simpleText(9, 0.01, 5, instructionsText, 1.25);
 
-    simpleText(38, 0.01, -80, touchText, 1.5);
-    simpleText(-50, 0.01, -5, "SKILLS", 3);
+    simpleText(39, 0.01, -83, touchText, 1.5);
+    simpleText(-60, 0.01, -5, "SKILLS", 3);
     simpleText(-60, 0.01, -55, "EXPERIENCE & PROJECTS", 3);
-    simpleText(61, 0.01, -17, "TIMELINE", 3);
+    simpleText(80, 0.01, -17, "TIMELINE", 3);
 
     wallOfBricks();
-    createTriangle(63, -55);
-    createTriangle(63, -51);
-    createTriangle(63, -47);
-    createTriangle(63, -43);
+    createTriangle(88, -75);
+    createTriangle(88, -71);
+    createTriangle(88, -67);
+    createTriangle(88, -63);
+    createTriangle(88, -59);
+    createTriangle(88, -55);
 
     addParticles();
     glowingParticles();
