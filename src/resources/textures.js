@@ -2,6 +2,7 @@
 let billboardTextures = {};
 billboardTextures.terpSolutionsTexture = "../src/jsm/terpSolutions.png";
 billboardTextures.bullVsBearTexture = "../src/jsm/bvbbillboard.png";
+billboardTextures.fairbnbTexture = "../src/jsm/fairbnb.png";
 billboardTextures.scanAndGoTexture = "../src/jsm/SaG-billboard.png";
 
 //box textures
