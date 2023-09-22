@@ -1034,8 +1034,9 @@ Ammo().then((Ammo) => {
 
     johnRaoWords(11.2, 1, -20);
     createTextOnPlane(-110, 0.01, -75, inputText.terpSolutionsText, 20, 40);
-    createTextOnPlane(-80, 0.01, -75, inputText.bullVsBearText, 20, 40);
-    createTextOnPlane(-14, 0.01, -49, inputText.scanAndGoText, 20, 40);
+    createTextOnPlane(-77, 0.01, -80, inputText.bullVsBearText, 20, 40);
+    createTextOnPlane(-47, 0.01, -80, inputText.bullVsBearText, 20, 40);
+    createTextOnPlane(-16, 0.01, -75, inputText.scanAndGoText, 20, 40);
 
     createBox(
       12,
@@ -1150,7 +1151,7 @@ Ammo().then((Ammo) => {
 
     simpleText(23, 0.01, -60, touchText, 1.5);
     simpleText(-50, 0.01, -5, "SKILLS", 3);
-    simpleText(-42, 0.01, -30, "EXPERIENCE", 3);
+    simpleText(-65, 0.01, -55, "EXPERIENCE & PROJECTS", 3);
     simpleText(61, 0.01, -17, "TIMELINE", 3);
 
     wallOfBricks();
