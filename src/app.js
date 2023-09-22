@@ -997,27 +997,27 @@ Ammo().then((Ammo) => {
     createWallZ(0, 1.75, -125);
 
     createBillboard(
-      -80,
+      -110,
       2.5,
-      -70,
+      -105,
       billboardTextures.terpSolutionsTexture,
       URL.terpsolutions,
-      Math.PI * 0.22
+      Math.PI * 0.15
     );
 
     createBillboard(
-      -45,
+      -70,
       2.5,
-      -78,
+      -110,
       billboardTextures.bullVsBearTexture,
       URL.bullVsBearTrading,
-      Math.PI * 0.17
+      Math.PI * 0.1
     );
 
     createBillboardRotated(
-      -17,
+      -10,
       1.25,
-      -75,
+      -105,
       billboardTextures.scanAndGoTexture,
       URL.samsClub,
       Math.PI * 0.15
