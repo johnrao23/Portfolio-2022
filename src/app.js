@@ -997,16 +997,25 @@ Ammo().then((Ammo) => {
     createWallZ(0, 1.75, -125);
 
     createBillboard(
-      -110,
+      -115,
       2.5,
       -105,
       billboardTextures.terpSolutionsTexture,
       URL.terpsolutions,
+      Math.PI * 0.2
+    );
+
+    createBillboard(
+      -80,
+      2.5,
+      -110,
+      billboardTextures.bullVsBearTexture,
+      URL.bullVsBearTrading,
       Math.PI * 0.15
     );
 
     createBillboard(
-      -70,
+      -45,
       2.5,
       -110,
       billboardTextures.bullVsBearTexture,
@@ -1015,12 +1024,12 @@ Ammo().then((Ammo) => {
     );
 
     createBillboardRotated(
-      -10,
+      -15,
       1.25,
       -105,
       billboardTextures.scanAndGoTexture,
       URL.samsClub,
-      Math.PI * 0.15
+      Math.PI * 0.1
     );
 
     johnRaoWords(11.2, 1, -20);
