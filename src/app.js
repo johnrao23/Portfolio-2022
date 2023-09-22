@@ -1033,8 +1033,8 @@ Ammo().then((Ammo) => {
     );
 
     johnRaoWords(11.2, 1, -20);
-    createTextOnPlane(-70, 0.01, -48, inputText.terpSolutionsText, 20, 40);
-    createTextOnPlane(-42, 0.01, -53, inputText.bullVsBearText, 20, 40);
+    createTextOnPlane(-110, 0.01, -75, inputText.terpSolutionsText, 20, 40);
+    createTextOnPlane(-80, 0.01, -75, inputText.bullVsBearText, 20, 40);
     createTextOnPlane(-14, 0.01, -49, inputText.scanAndGoText, 20, 40);
 
     createBox(
