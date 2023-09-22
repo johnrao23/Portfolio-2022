@@ -1019,7 +1019,7 @@ Ammo().then((Ammo) => {
       2.5,
       -110,
       billboardTextures.fairbnbTexture,
-      URL.bullVsBearTrading,
+      URL.getFairbnb,
       Math.PI * 0.1
     );
 

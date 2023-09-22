@@ -41,6 +41,7 @@ URL.terpsolutions =
   "https://web.archive.org/web/20200302001846/https://terpsolutions.com/";
 URL.johnrao = "https://johnrao.com";
 URL.bullVsBearTrading = "https://www.bullvsbeartrading.com";
+URL.getFairbnb = "https://www.getfairbnb.com";
 URL.samsClubURL = "https://www.samsclub.com/";
 URL.gitHub = "https://github.com/johnrao23/Portfolio-2022";
 URL.twitter = "https://twitter.com/0xRao";
