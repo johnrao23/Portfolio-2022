@@ -689,7 +689,7 @@ Ammo().then((Ammo) => {
     for (var j = 0; j < numberOfRowsHigh; j++) {
       var oddRow = j % 2 == 1;
 
-      pos.x = 90;
+      pos.x = 85;
 
       if (oddRow) {
         pos.x += 0.25 * brickLength;
@@ -1039,7 +1039,7 @@ Ammo().then((Ammo) => {
     createTextOnPlane(-16, 0.01, -75, inputText.scanAndGoText, 20, 40);
 
     createBox(
-      12,
+      28,
       2,
       -100,
       4,
@@ -1052,7 +1052,7 @@ Ammo().then((Ammo) => {
     );
 
     createBox(
-      19.1,
+      35.1,
       2,
       -100,
       4,
@@ -1065,7 +1065,7 @@ Ammo().then((Ammo) => {
     );
 
     createBox(
-      26.9,
+      42.9,
       2,
       -100,
       4,
@@ -1091,7 +1091,7 @@ Ammo().then((Ammo) => {
     // );
 
     createBox(
-      34.5,
+      50.5,
       2,
       -100,
       4,
@@ -1116,10 +1116,10 @@ Ammo().then((Ammo) => {
     //   false
     // );
 
-    floatingLabel(11.875, 4.5, -70, "Github");
-    floatingLabel(18.86, 4.5, -70, "LinkedIn");
-    floatingLabel(26.875, 4.5, -70, "Twitter");
-    floatingLabel(34.26, 4.5, -70, "Email");
+    floatingLabel(27.875, 4.5, -100, "Github");
+    floatingLabel(34.86, 4.5, -100, "LinkedIn");
+    floatingLabel(42.875, 4.5, -100, "Twitter");
+    floatingLabel(50.26, 4.5, -100, "Email");
     // floatingLabel(35, 6.5, -70, '  Static \nWebsite');
     // floatingLabel(35, 6.5, -70, "   How I \nmade this");
     // floatingLabel(44, 6.5, -70, '   How I \nmade this');
@@ -1149,7 +1149,7 @@ Ammo().then((Ammo) => {
 
     simpleText(9, 0.01, 5, instructionsText, 1.25);
 
-    simpleText(23, 0.01, -60, touchText, 1.5);
+    simpleText(38, 0.01, -80, touchText, 1.5);
     simpleText(-50, 0.01, -5, "SKILLS", 3);
     simpleText(-60, 0.01, -55, "EXPERIENCE & PROJECTS", 3);
     simpleText(61, 0.01, -17, "TIMELINE", 3);
