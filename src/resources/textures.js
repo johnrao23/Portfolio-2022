@@ -28,6 +28,7 @@ let inputText = {};
 inputText.terpSolutionsText = "../src/jsm/terp-solutions-text.png";
 inputText.activities = "../src/jsm/activities_text.png";
 inputText.bullVsBearText = "../src/jsm/bvb-text.png";
+inputText.fairbnbText = "../src/jsm/fairbnb-text.png";
 inputText.scanAndGoText = "../src/jsm/SaG-text.png";
 inputText.staticPortfolio = "../src/jsm/static-portfolio.png";
 
