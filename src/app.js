@@ -1200,6 +1200,7 @@ Ammo().then((Ammo) => {
 
     loadJohnText();
     loadEngineerText();
+    loadHelloWorldText();
 
     let touchText, instructionsText;
     if (isTouchscreenDevice()) {
