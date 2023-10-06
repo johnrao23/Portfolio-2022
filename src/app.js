@@ -517,7 +517,7 @@ Ammo().then((Ammo) => {
       var textGeo = new THREE.BufferGeometry().fromGeometry(geometry);
 
       text = new THREE.Mesh(geometry, textMaterials);
-      text.position.z = -50;
+      text.position.z = 100;
       text.position.y = 0.1;
       text.receiveShadow = true;
       text.castShadow = true;
@@ -1098,7 +1098,7 @@ Ammo().then((Ammo) => {
     );
 
     johnRaoWords(11.2, 1, -20);
-    helloWorldWords(2.2, 1, -50);
+    helloWorldWords(11.2, 1, -20);
     createTextOnPlane(-110, 0.01, -75, inputText.terpSolutionsText, 20, 40);
     createTextOnPlane(-77, 0.01, -80, inputText.bullVsBearText, 20, 40);
     createTextOnPlane(-45, 0.01, -80, inputText.fairbnbText, 20, 40);
