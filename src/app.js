@@ -482,7 +482,7 @@ Ammo().then((Ammo) => {
   }
 
   //loads text for Hello World Mesh
-  function loadJohnText() {
+  function loadHelloWorldText() {
     var text_loader = new THREE.FontLoader();
 
     text_loader.load("./src/jsm/Roboto_Regular.json", function (font) {
@@ -517,7 +517,7 @@ Ammo().then((Ammo) => {
       var textGeo = new THREE.BufferGeometry().fromGeometry(geometry);
 
       text = new THREE.Mesh(geometry, textMaterials);
-      text.position.z = -20;
+      text.position.z = -50;
       text.position.y = 0.1;
       text.receiveShadow = true;
       text.castShadow = true;
