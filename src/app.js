@@ -510,14 +510,14 @@ Ammo().then((Ammo) => {
       geometry.computeBoundingBox();
       geometry.computeVertexNormals();
 
-      xMid = -0.5 * (geometry.boundingBox.max.x - geometry.boundingBox.min.x);
+      xMid = -4 * (geometry.boundingBox.max.x - geometry.boundingBox.min.x);
 
       geometry.translate(xMid, 0, 0);
 
       var textGeo = new THREE.BufferGeometry().fromGeometry(geometry);
 
       text = new THREE.Mesh(geometry, textMaterials);
-      text.position.z = 100;
+      text.position.z = 85;
       text.position.y = 0.1;
       text.receiveShadow = true;
       text.castShadow = true;
