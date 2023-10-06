@@ -460,6 +460,71 @@ Ammo().then((Ammo) => {
     });
   }
 
+  //create Ammo.js body to add solid mass to "Hello World"
+  function helloWorldWords(x, y, z) {
+    const boxScale = { x: 46, y: 3, z: 2 };
+    let quat = { x: 0, y: 0, z: 0, w: 1 };
+    let mass = 0; //mass of zero = infinite mass
+
+    const linkBox = new THREE.Mesh(
+      new THREE.BoxBufferGeometry(boxScale.x, boxScale.y, boxScale.z),
+      new THREE.MeshPhongMaterial({
+        color: 0xff6600,
+      })
+    );
+
+    linkBox.position.set(x, y, z);
+    linkBox.castShadow = true;
+    linkBox.receiveShadow = true;
+    objectsWithLinks.push(linkBox.uuid);
+
+    addRigidPhysics(linkBox, boxScale);
+  }
+
+  //loads text for Hello World Mesh
+  function loadJohnText() {
+    var text_loader = new THREE.FontLoader();
+
+    text_loader.load("./src/jsm/Roboto_Regular.json", function (font) {
+      var xMid, text;
+
+      var color = 0xfffc00;
+
+      var textMaterials = [
+        new THREE.MeshBasicMaterial({ color: color }), // front
+        new THREE.MeshPhongMaterial({ color: color }), // side
+      ];
+
+      var geometry = new THREE.TextGeometry("HELLO WORLD", {
+        font: font,
+        size: 3,
+        height: 0.5,
+        curveSegments: 12,
+        bevelEnabled: true,
+        bevelThickness: 0.1,
+        bevelSize: 0.11,
+        bevelOffset: 0,
+        bevelSegments: 1,
+      });
+
+      geometry.computeBoundingBox();
+      geometry.computeVertexNormals();
+
+      xMid = -0.5 * (geometry.boundingBox.max.x - geometry.boundingBox.min.x);
+
+      geometry.translate(xMid, 0, 0);
+
+      var textGeo = new THREE.BufferGeometry().fromGeometry(geometry);
+
+      text = new THREE.Mesh(geometry, textMaterials);
+      text.position.z = -20;
+      text.position.y = 0.1;
+      text.receiveShadow = true;
+      text.castShadow = true;
+      scene.add(text);
+    });
+  }
+
   //function to create billboard
   function createBillboard(
     x,
