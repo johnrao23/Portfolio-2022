@@ -510,7 +510,7 @@ Ammo().then((Ammo) => {
       geometry.computeBoundingBox();
       geometry.computeVertexNormals();
 
-      xMid = -4 * (geometry.boundingBox.max.x - geometry.boundingBox.min.x);
+      xMid = -3 * (geometry.boundingBox.max.x - geometry.boundingBox.min.x);
 
       geometry.translate(xMid, 0, 0);
 
