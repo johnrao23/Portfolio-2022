@@ -488,7 +488,8 @@ Ammo().then((Ammo) => {
     text_loader.load("./src/jsm/Roboto_Regular.json", function (font) {
       var xMid, text;
 
-      var color = 0xfffc00;
+      // var color = 0xfffc00;
+      var color = 0x0000ff;
 
       var textMaterials = [
         new THREE.MeshBasicMaterial({ color: color }), // front
