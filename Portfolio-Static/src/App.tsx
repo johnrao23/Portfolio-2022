@@ -1,5 +1,5 @@
 import React from 'react';
-import Main from './components/Main.tsx'
+import Main from './components/main'
 import './App.css'
 
 const App: React.FC = () => {
