@@ -13,12 +13,17 @@
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
     "@tailwindcss/typography": "^0.5.10",
+    "@tweenjs/tween.js": "^21.0.0",
+    "ammo.js": "^0.0.10",
     "autoprefixer": "^10.4.16",
+    "dat.gui": "^0.7.9",
     "postcss": "^8.4.32",
     "prettier-plugin-tailwindcss": "^0.5.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwindcss": "^3.3.6"
+    "stats.js": "^0.17.0",
+    "tailwindcss": "^3.3.6",
+    "three": "^0.159.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.37",
