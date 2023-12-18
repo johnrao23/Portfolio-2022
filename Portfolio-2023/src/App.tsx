@@ -1,13 +1,15 @@
 import React from 'react';
-import Main from './static/components/Main'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Main from './static/components/Main';
 
 const App: React.FC = () => {
-
   return (
-    <div>
-      <Main />
-    </div>
-  )
-}
+    <BrowserRouter>
+      <Routes>
+        <Route path="/static" element={<Main />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
 export default App;
