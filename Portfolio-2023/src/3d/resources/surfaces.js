@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import * as THREE from "three";
 import { scene, manager } from "./world";
 
@@ -84,7 +85,7 @@ export function allSkillsSection(
   xScale,
   zScale,
   boxTexture,
-  URLLink = null
+  URLLink = null,
 ) {
   const boxScale = { x: xScale, y: 0.1, z: zScale };
   let quat = { x: 0, y: 0, z: 0, w: 1 };

@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // use Three.js to set up graphics
-import * as THREE from 'three';
-import Stats from 'stats.js';
-import galaxyVertexShader from '../jsm/vertex.glsl';
-import galaxyFragmentShader from '../jsm/fragment.glsl';
+import * as THREE from "three";
+import Stats from "stats.js";
+import galaxyVertexShader from "../jsm/vertex.glsl";
+import galaxyFragmentShader from "../jsm/fragment.glsl";
 
 //threejs variable declaration
 export let clock,
@@ -33,7 +34,7 @@ export function createWorld() {
     45,
     window.innerWidth / window.innerHeight,
     1,
-    5000
+    5000,
   );
   camera.position.set(0, 30, 70);
   //camera.lookAt(scene.position);
@@ -85,7 +86,7 @@ export function createWorld() {
 
 export function glowingParticles() {
   var particleTextureLoader = new THREE.TextureLoader(manager);
-  var particleTexture = particleTextureLoader.load('../src/jsm/spark.png');
+  var particleTexture = particleTextureLoader.load("../src/jsm/spark.png");
 
   particleGroup = new THREE.Object3D();
   particleGroup.position.x = -1;
@@ -106,7 +107,7 @@ export function glowingParticles() {
     sprite.position.set(
       Math.random() - 0.5,
       Math.random() - 0.5,
-      Math.random() - 0.5
+      Math.random() - 0.5,
     );
 
     sprite.position.setLength(radiusRange * (Math.random() * 0.1 + 0.9));
@@ -185,8 +186,8 @@ export const generateGalaxy = () => {
   parameters.spin = 1;
 
   parameters.randomnessPower = 3;
-  parameters.insideColor = '#ff6030';
-  parameters.outsideColor = '#1b3984';
+  parameters.insideColor = "#ff6030";
+  parameters.outsideColor = "#1b3984";
   parameters.randomness = 0.2;
 
   let geometry = null;
@@ -258,12 +259,12 @@ export const generateGalaxy = () => {
     scales[i] = Math.random();
   }
 
-  geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-  geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
-  geometry.setAttribute('aScale', new THREE.BufferAttribute(scales, 1));
+  geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+  geometry.setAttribute("color", new THREE.BufferAttribute(colors, 3));
+  geometry.setAttribute("aScale", new THREE.BufferAttribute(scales, 1));
   geometry.setAttribute(
-    'aRandomness',
-    new THREE.BufferAttribute(randomness, 3)
+    "aRandomness",
+    new THREE.BufferAttribute(randomness, 3),
   );
 
   /**

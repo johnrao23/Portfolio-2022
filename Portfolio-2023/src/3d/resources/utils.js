@@ -1,7 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 //start link events
-import * as THREE from 'three';
-import { camera, renderer, scene } from './world';
-import { cursorHoverObjects } from '../app';
+import * as THREE from "three";
+import { camera, renderer, scene } from "./world";
+import { cursorHoverObjects } from "../app";
 
 export const pickPosition = { x: 0, y: 0 };
 
@@ -10,7 +11,7 @@ export function rotateCamera(ballPosition) {
   var camPos = new THREE.Vector3(
     camera.position.x,
     camera.position.y,
-    camera.position.z
+    camera.position.z,
   );
 
   // target camera position
@@ -31,7 +32,7 @@ export function rotateCamera(ballPosition) {
     targetPos = new THREE.Vector3(
       ballPosition.position.x,
       ballPosition.position.y + 50,
-      ballPosition.position.z + 40
+      ballPosition.position.z + 40,
     );
   }
 
@@ -45,7 +46,7 @@ export function rotateCamera(ballPosition) {
     targetPos = new THREE.Vector3(
       ballPosition.position.x,
       ballPosition.position.y + 50,
-      ballPosition.position.z + 40
+      ballPosition.position.z + 40,
     );
   }
 
@@ -54,7 +55,7 @@ export function rotateCamera(ballPosition) {
     targetPos = new THREE.Vector3(
       ballPosition.position.x,
       ballPosition.position.y + 10,
-      ballPosition.position.z + 40
+      ballPosition.position.z + 40,
     );
   }
 
@@ -63,7 +64,7 @@ export function rotateCamera(ballPosition) {
     targetPos = new THREE.Vector3(
       ballPosition.position.x,
       ballPosition.position.y + 30,
-      ballPosition.position.z + 60
+      ballPosition.position.z + 60,
     );
   }
 
@@ -112,9 +113,9 @@ export function launchHover(event) {
   var intersects = raycaster.intersectObjects(cursorHoverObjects);
 
   if (intersects.length > 0) {
-    document.getElementById('document-body').style.cursor = 'pointer';
+    document.getElementById("document-body").style.cursor = "pointer";
   } else {
-    document.getElementById('document-body').style.cursor = 'default';
+    document.getElementById("document-body").style.cursor = "default";
   }
 }
 

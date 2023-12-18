@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // create keyboard control event listeners
 
 export let moveDirection = { left: 0, right: 0, forward: 0, back: 0 };
