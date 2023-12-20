@@ -5,7 +5,7 @@ const Main: React.FC = () => {
     return (
         <div>
             <NavBar />
-            <h1>Hello</h1>
+            <h1>Main Content</h1>
         </div>
     );
 };
