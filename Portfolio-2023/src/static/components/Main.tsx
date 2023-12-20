@@ -7,6 +7,7 @@ const Main: React.FC = () => {
         <div>
             <NavBar />
             <h1>Main Content</h1>
+            <Footer />
         </div>
     );
 };
