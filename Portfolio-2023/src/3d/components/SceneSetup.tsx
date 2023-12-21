@@ -3,6 +3,7 @@ import * as THREE from 'three';
 import * as Ammo from 'ammo.js';
 import { createBall } from './createObjects'; // Import the function
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const setupScene = (Ammo: any, container: HTMLDivElement) => {
   // Initialize renderer, scene, camera
   const scene = new THREE.Scene();
