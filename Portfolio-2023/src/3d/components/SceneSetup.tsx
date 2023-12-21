@@ -1,7 +1,7 @@
 // sceneSetup.ts
 import * as THREE from 'three';
 import * as Ammo from 'ammo.js';
-import { createBall } from './createObjects'; // Import the function
+import { createBall } from './CreateObjects.ts';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const setupScene = (Ammo: any, container: HTMLDivElement) => {
