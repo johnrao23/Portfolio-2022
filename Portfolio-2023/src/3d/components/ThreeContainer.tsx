@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import * as Ammo from 'ammo.js';
-import { setupScene } from './sceneSetup';
+import { setupScene } from './SceneSetup';
 
 const ThreeContainer: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
