@@ -6,7 +6,8 @@ const ThreeContainer: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    Ammo().then((AmmoLib) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    Ammo().then((AmmoLib: any) => {
       if (containerRef.current) {
         setupScene(AmmoLib, containerRef.current);
       }
