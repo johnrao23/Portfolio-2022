@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App'; // Assuming App is the default export from App.tsx
-import Main from './3d/components/Main.js';
+import Main from './3d/Main.tsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
 
