@@ -1,4 +1,3 @@
-// Main.tsx
 import React from 'react';
 import ThreeContainer from './components/ThreeContainer';
 
