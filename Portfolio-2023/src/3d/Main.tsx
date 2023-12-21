@@ -1,6 +1,6 @@
 // Main.tsx
 import React from 'react';
-import ThreeContainer from './ThreeContainer';
+import ThreeContainer from './components/ThreeContainer';
 
 const Main: React.FC = () => {
   return <ThreeContainer />;
