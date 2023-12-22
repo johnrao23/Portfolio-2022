@@ -1,23 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App'; // Assuming App is the default export from App.tsx
-import Main from './3d/Main.tsx';
+import App from './App';
+import Main from './3d/Main';
+import { WEBGL } from './3d/WebGL';
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
-
 const pathname = window.location.pathname;
-if (pathname.startsWith('/static')) {
-  // Render the React application
+
+if (pathname.startsWith('/static') || !WEBGL.isWebGLAvailable()) {
   root.render(
     <React.StrictMode>
       <App />
-    </React.StrictMode>,
+    </React.StrictMode>
   );
 } else {
-  // Render the Three.js application
   root.render(
     <React.StrictMode>
       <Main />
-    </React.StrictMode>,
+    </React.StrictMode>
   );
 }
