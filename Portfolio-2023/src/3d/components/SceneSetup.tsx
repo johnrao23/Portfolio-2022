@@ -1,4 +1,3 @@
-// sceneSetup.ts
 import * as THREE from 'three';
 import * as Ammo from 'ammo.js';
 import { createBall } from './CreateObjects.ts';
