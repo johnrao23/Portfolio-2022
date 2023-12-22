@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import Main from './3d/Main';
-import { WEBGL } from './3d/WebGL';
+import WEBGL from './3d/components/WebGL';
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
 const pathname = window.location.pathname;
