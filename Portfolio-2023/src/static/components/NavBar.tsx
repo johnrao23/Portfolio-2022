@@ -42,8 +42,8 @@ function MenuIcon({
 }
 
 export function NavBar() {
-  let navBarRef = useRef<React.ElementRef<'div'>>(null)
-  let [activeIndex, setActiveIndex] = useState<number | null>(null)
+  const navBarRef = useRef<React.ElementRef<'div'>>(null)
+  const [activeIndex, setActiveIndex] = useState<number | null>(null)
   let mobileActiveIndex = activeIndex === null ? 0 : activeIndex
 
   useEffect(() => {
@@ -53,7 +53,7 @@ export function NavBar() {
       }
 
       let newActiveIndex = null
-      let elements = sections
+      const elements = sections
         .map(({ id }) => document.getElementById(id))
         .filter((el): el is HTMLElement => el !== null)
       let bodyRect = document.body.getBoundingClientRect()
