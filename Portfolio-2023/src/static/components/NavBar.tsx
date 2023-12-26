@@ -57,7 +57,7 @@ export function NavBar() {
         .map(({ id }) => document.getElementById(id))
         .filter((el): el is HTMLElement => el !== null)
       const bodyRect = document.body.getBoundingClientRect()
-      let offset = bodyRect.top + navBarRef.current.offsetHeight + 1
+      const offset = bodyRect.top + navBarRef.current.offsetHeight + 1
 
       if (window.scrollY >= Math.floor(bodyRect.height) - window.innerHeight) {
         setActiveIndex(sections.length - 1)
